@@ -1,0 +1,28 @@
+# GLM-Image Worker Dependencies
+
+# PyTorch with CUDA support
+torch>=2.2.0
+torchvision>=0.17.0
+
+# Install transformers and diffusers from source (required for GLM-Image)
+git+https://github.com/huggingface/transformers.git
+git+https://github.com/huggingface/diffusers.git
+
+# Core dependencies
+accelerate>=0.33.0
+safetensors>=0.4.0
+sentencepiece>=0.2.0
+
+# Image processing
+Pillow>=10.0.0
+numpy>=1.26.0
+
+# API framework
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+python-multipart>=0.0.12
+httpx>=0.28.1
+pydantic>=2.10.0
+
+# HuggingFace Hub for model downloads
+huggingface-hub>=0.27.0
